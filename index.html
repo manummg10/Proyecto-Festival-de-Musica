@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival De Música</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="build/css/app.css">
+ <style>
+        /* Neon Cosmic Effect for Header */
+        .header h1 {
+            font-size: 4rem;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 
+                0 0 5px #ffffff,
+                0 0 10px #ffffff,
+                0 0 20px #ffffff,
+                0 0 30px #ffffff,
+                0 0 40px #ffffff,
+                0 0 50px #ffffff,
+                0 0 60px #ffffff,
+                0 0 70px #ffffff;
+               
+            animation: flicker 1.5s infinite alternate;
+            transition: transform 0.3s ease, letter-spacing 0.3s ease;
+        }
+
+        @keyframes flicker {
+            0%, 18%, 22%, 25%, 53%, 57%, 100% {
+                text-shadow: 
+                    0 0 5px #fff,
+                    0 0 10px #fff,
+                    0 0 20px #000000,
+                    0 0 30px #000000,
+                    0 0 40px #000000,
+                    0 0 50px #000000,
+                    0 0 60px #000000,
+                    0 0 70px #000000,
+                   
+            }
+            20%, 24%, 55% {        
+                text-shadow: none;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="contenedor contenido-header">
+               <h1>Techno & EDM Guardias Viejas Festival</h1>
+
+                <nav class="navegacion-principal">
+                    <a href="#lineup">LINEUP</a>
+                    <a href="#Galeria">GALERIA</a>
+                    <a href="#ENTRADAS">ENTRADAS</a>
+                </nav>
+            </div>
+        </header>
+        <div class="video">
+            <div class="overlay">
+                <div class="contenedor contenido-video">
+                    <h2>Techno & EDM Guardias Viejas Festival</h2>
+                    <p>Mayo 2026, Guardias Viejas, Almeria</p>
+                </div>
+            </div>
+            <video autoplay muted loop >
+                <source src="video/dj.mp4" type="video/mp4"/>
+                <source src="video/dj.ogv" type="video/ogg"/>
+                <source src="video/dj.webm" type="video/webm"/>   
+            </video>
+        </div>
+
+        <section class="sobre-festival" >
+            <div class="imagen">
+                <img width="300" height="200" loading="lazy" src="src/img/imagen_dj.jpg" alt="sobre Festival" />
+            </div>
+
+            <div class="contenido-festival">
+                <h2>Techno & EDM Guardias Viejas Festival</h2>
+                <p class="fecha"> <strong>Mayo 2026, Guardias Viejas, Almeria</strong></p>
+                <p> Promete ser uno de los eventos más
+                     electrizantes del año, llevando la vanguardia de la música electrónica a la
+                      impresionante localidad de Guardias Viejas, en Almería. Este festival, que
+                       se celebrará en mayo de 2026, fusiona lo mejor del techno y EDM con el encanto 
+                       único de la costa andaluza.<br>
+                       <p><strong>Ver ubicación en Google Maps:</strong></a></p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3198.922840698738!
+                        2d-2.8540628!3d36.700392!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd705c7c134c793b%3A0xb0dbb44a7c0a1152!
+                        2sCastillo%20de%20Guardias%20Viejas!5e0!3m2!1ses!2ses!4v1723114962292!5m2!1ses!2ses
+                        " width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy=
+                        "no-referrer-when-downgrade"></iframe>
+                    
+                    <p></p><strong>Aspectos destacados del festival:<br></strong></p> 
+                    
+                    <p><strong>Cartel de primer nivel:</strong> <br> Con la participación de DJ’s internacionales y nacionales de renombre, el
+                         festival ofrecerá una amplia variedad de géneros dentro del techno y la música electrónica, 
+                         garantizando una experiencia inolvidable para todos los aficionados.
+
+                    <p><strong>Lugar impresionante:</strong><br> El festival se llevará a cabo en el pintoresco entorno de Guardias Viejas,
+                     conocido por su histórico castillo y sus impresionantes vistas al mar Mediterráneo. Esta ubicación
+                      única añade un ambiente especial al evento, convirtiéndolo en una experiencia inigualable.
+
+                    <p><strong>Experiencia inmersiva:</strong> <br> Más allá de la música, los asistentes podrán disfrutar de un espectáculo
+                     visual con luces de última generación, instalaciones artísticas, y una variada oferta gastronómica
+                      que celebra los sabores locales de Andalucía.
+
+                    <p>Ya seas un veterano de los festivales o un recién llegado a la escena de la música electrónica,
+                     el Techno & EDM Guardias Viejas Festival 2026 es un evento que no te puedes perder. Únete a nosotros
+                      para un fin de semana de música, cultura y celebración bajo el sol andaluz.</p>
+            </div>
+        </section>
+        <section id="lineup" class="lineup">
+            <h3>Line Up</h3>
+        
+            <p class="dia">Viernes 22</p>
+            <div class="escenarios-contenedor ">
+                <div class="escenario bg-amarillo">
+                    <p class="nombre-escenario">Techno</p>
+        
+                    <ul class="calendario">
+                        <li>
+                            24:00 | <span>Adam Beyer</span>
+                        </li>
+                        <li>
+                            22:00 | <span>Carl Cox</span>
+                        </li>
+                        <li>
+                            20:00 | <span>HI-LO</span>
+                        </li>
+                        <li>
+                            19:00 | <span>Amelie Lens</span>
+                        </li>
+                        <li>
+                            18:00 | <span>CamelPhat</span>
+                        </li>
+                        <li>
+                            17:00 | <span>ARTBAT</span>
+                        </li>
+                    </ul>
+                </div> <!--.escenario-->
+        
+                <div class="escenario bg-verde">
+                    <p class="nombre-escenario">EDM</p>
+        
+                    <ul class="calendario">
+                        <li>
+                            24:00 | <span>David Guetta</span>
+                        </li>
+                        <li>
+                            22:00 | <span>Tïesto</span>
+                        </li>
+                        <li>
+                            20:00 | <span>Martin Garrix</span>
+                        </li>
+                        <li>
+                            19:00 | <span>Steve Aoki</span>
+                        </li>
+                        <li>
+                            18:00 | <span>Afrojack</span>
+                        </li>
+                        <li>
+                            17:00 | <span>Vintage Culture</span>
+                        </li>
+                    </ul>
+                </div> <!--.escenario-->
+            </div> <!--.escenarios-contenedor -->
+        
+        
+            <p class="dia">Sábado 23</p>
+            <div class="escenarios-contenedor contenedor">
+                <div class="escenario bg-verde">
+                    <p class="nombre-escenario">Techno</p>
+        
+                    <ul class="calendario">
+                        <li>
+                            24:00 | <span>Reinier Zonneveld</span>
+                        </li>
+                        <li>
+                            22:00 | <span>Eric Prydz</span>
+                        </li>
+                        <li>
+                            20:00 | <span>Deadmau5</span>
+                        </li>
+                        <li>
+                            19:00 | <span>Joris Voorn</span>
+                        </li>
+                        <li>
+                            18:00 | <span>Nina Kraviz</span>
+                        </li>
+                        <li>
+                            17:00 | <span>Argy</span>
+                        </li>
+                    </ul>
+                </div> <!--.escenario-->
+        
+                <div class="escenario bg-amarillo">
+                    <p class="nombre-escenario">EDM</p>
+        
+                    <ul class="calendario">
+                        <li>
+                            24:00 | <span>Armin Van Buuren</span>
+                        </li>
+                        <li>
+                            22:00 | <span>Calvin Harris</span>
+                        </li>
+                        <li>
+                            20:00 | <span>Hardwell</span>
+                        </li>
+                        <li>
+                            19:00 | <span>Above & Beyond</span>
+                        </li>
+                        <li>
+                            18:00 | <span>Diplo</span>
+                        </li>
+                        <li>
+                            17:00 | <span>Steve Angello</span>
+                        </li>
+                    </ul>
+                </div> <!--.escenario-->
+            </div> <!--.escenarios-contenedor -->
+        </section>
+
+        <section id="Galeria" class="galeria">
+        <h3>Galería</h3>
+
+        <div class="galeria-imagenes"></div>
+        </section>
+
+        <section id="ENTRADAS" class="contenedor-boletos">
+            <h3>ENTRADAS</h3>
+        
+            <div class="boletos">
+                <div class="pase">
+                    <p class="pase-nombre">Pase 1 Día</p>
+                    <header class="pase-header">
+                        <p>Incluye</p>
+                    </header>
+                    <div class="pase-body">
+                        <ul>
+                            <li>Acceso a ambos escenarios</li>
+                            <li>Bebida Ilimitada</li>
+                            <li>Camisa / Pulsera del Evento</li>
+                        </ul>
+                    </div>
+                    <footer class="pase-footer">
+                        <p>100€ </p>
+                    </footer>
+                </div>
+                <div class="pase">
+                    <p class="pase-nombre">Pase 2 Días</p>
+                    <header class="pase-header">
+                        <p>Incluye</p>
+                    </header>
+                    <div class="pase-body">
+                        <ul>
+                            <li>Acceso a ambos escenarios</li>
+                            <li>Bebida Ilimitada</li>
+                            <li>Camisa / Pulsera del Evento</li>
+                            <li>Acceso VIP</li>
+                        </ul>
+                    </div>
+                    <footer class="pase-footer">
+                        <p>180€ </p>
+                    </footer>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>Techno & EDM Guardias Viejas Festival. Todos los derechos reservados para Manu Moraira</p>
+        </footer>
+
+        <script src="build/js/app.js"></script>
+
+    </body>
+</html>               
